@@ -1,6 +1,6 @@
 # Backend
 
-This directory contains the backend code for the application. The backend is built using Python and provides the API and business logic for the application
+This directory contains the backend code for the application. The backend is built using Python and provides the API and business logic for the application.
 
 ## Prerequisites
 
