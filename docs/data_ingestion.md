@@ -57,7 +57,7 @@ If needed, you can modify the chunking algorithm in `app/backend/prepdocslib/tex
 
 To enhance search functionality, categorize data during the ingestion process with the `--category` argument, for example `scripts/prepdocs.ps1 --category ExampleCategoryName`. This argument specifies the category to which the data belongs, enabling you to filter search results based on these categories.
 
-After running the script with the desired category, ensure these categories are added to the 'Include Category' dropdown list. This can be found in the developer settings in [`Settings.tsx`](https://github.com/Azure-Samples/azure-search-openai-demo/blob/main/app/frontend/src/components/Settings/Settings.tsx). The default option for this dropdown is "All". By including specific categories, you can refine your search results more effectively.
+After running the script with the desired category, ensure these categories are added to the 'Include Category' dropdown list. This can be found in the developer settings in [`Settings.tsx`](https://github.com/Azure-Samples/azure-search-openai-demo/app/frontend/src/components/Settings/Settings.tsx). The default option for this dropdown is "All". By including specific categories, you can refine your search results more effectively.
 
 ### Indexing additional documents
 
@@ -77,7 +77,7 @@ You can also remove individual documents by using the `--remove` flag. Open eith
 
 Azure AI Search includes an [integrated vectorization feature](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-the-public-preview-of-integrated-vectorization-in-azure-ai-search/3960809), a cloud-based approach to data ingestion. Integrated vectorization takes care of document format cracking, data extraction, chunking, vectorization, and indexing, all with Azure technologies.
 
-See [this notebook](https://github.com/Azure/azure-search-vector-samples/blob/main/demo-python/code/integrated-vectorization/azure-search-integrated-vectorization-sample.ipynb) to understand the process of setting up integrated vectorization.
+See [this notebook](https://github.com/Azure/azure-search-vector-samples/demo-python/code/integrated-vectorization/azure-search-integrated-vectorization-sample.ipynb) to understand the process of setting up integrated vectorization.
 We have integrated that code into our `prepdocs` script, so you can use it without needing to understand the details.
 
 You must first explicitly [enable integrated vectorization](./deploy_features.md#enabling-integrated-vectorization) in the `azd` environment to use this feature.
