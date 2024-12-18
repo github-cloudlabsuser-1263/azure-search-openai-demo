@@ -29,7 +29,22 @@ This directory contains the backend code for the application. The backend is bui
         ```sh
         source venv/bin/activate
         ```
+        3. Install the dependencies listed in `requirements.txt`:
 
+            ```sh
+            pip install -r requirements.txt
+            ```
+
+        ## requirements.txt
+
+        The `requirements.txt` file should include the following dependencies:
+
+        ```
+        fastapi==0.70.0
+        uvicorn==0.15.0
+        pydantic==1.8.2
+        requests==2.26.0
+        ```
 3. Install the dependencies:
 
     ```sh
