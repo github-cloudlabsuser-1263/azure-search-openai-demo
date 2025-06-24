@@ -1,3 +1,8 @@
+# approach.py
+#
+# This module defines the base classes and types for retrieval approaches in the backend.
+# It integrates with Azure Cognitive Search, OpenAI, and related services to support advanced retrieval and reasoning workflows.
+
 import os
 from abc import ABC
 from collections.abc import AsyncGenerator, Awaitable
@@ -33,9 +38,12 @@ from openai.types.chat import (
     ChatCompletionToolParam,
 )
 
+
 from approaches.promptmanager import PromptManager
 from core.authentication import AuthenticationHelper
 
+# Data classes and base types for retrieval approaches are defined below.
+# These are used to implement custom retrieval and reasoning logic in the backend.
 
 @dataclass
 class Document:
